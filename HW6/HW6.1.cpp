@@ -1,21 +1,20 @@
 #include <iostream>
-#include <ctime>
 using namespace std;
 
 int main()
 {
 	setlocale(LC_ALL, "rus");
-
-	int x, y, uo = 0;
+	srand(time(NULL));
+	int a, b, uo = 0;
 	bool flag;
 
 	cout << "Введите диапазоны: ";
-	cin >> x >> y;
+	cin >> a >> b;
 
-	if (x > y)
-		swap(x, y);
+	if (a > b)
+		swap(a, b);
 
-	for (int i = x; i <= y; i++) {
+	for (int i = a; i <= b; i++) {
 		flag = true;
 		for (int j = 2; j <= sqrt(i); j++) {
 			if (i % j == 0) {
@@ -26,5 +25,5 @@ int main()
 			uo++;
 	}
 
-	cout << x << " to " << y << " is " << uo;
+	cout <<"В диапазоне: от "<< a <<" до "<< b << ", простых чисел: " << uo;
 }
