@@ -73,6 +73,17 @@ int main()
         }
         if (flag)break;
     }
+    /*Сортировка "Подсчетом"*/
+    int uga[SIZE] = {};
+    for (int i = 0, k = 0; i < 10; i++) {
+        for (int j = 0; j < uga[i]; j++) {
+            arr[k++] = i;
+        }
+    }
 
+    cout << endl;
 
+    for (int i = 0; i < 10; i++) {
+        cout << arr[i] << " ";
+    }
 }
