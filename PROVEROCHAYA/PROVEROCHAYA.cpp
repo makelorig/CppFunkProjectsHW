@@ -17,9 +17,9 @@ int main()
     //ZADANIE @
     cout << endl;
     int a, b, n;
-    if(a>b)swap(a,b);
     cout << "Введите диапазоны: " << endl;
     cin >> a >> b;
+    if(a>b)swap(a,b);
     cout << "Введите число: " << endl;
     cin >> n;
     for (int i = a; i < b;i++) {
