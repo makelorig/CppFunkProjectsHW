@@ -77,8 +77,8 @@ int main()
     //ZADANIE &
     cout << endl;
     int massivz7[SIZE10] = {};
-    for (int i = 0; i < SIZE10; i++) {
-        if (massivz6[i] % 2 == 0) massivz7[i] = massivz6[i];
+    for (int i = 0,k=0; i < SIZE10; i++) {
+        if (massivz6[i] % 2 == 0) massivz7[k++] = massivz6[i];
     }
     //ZADANIE *
     cout << endl<< "Введите сторону квадрата: ";
