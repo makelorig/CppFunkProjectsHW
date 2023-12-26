@@ -17,6 +17,7 @@ int main()
     //ZADANIE @
     cout << endl;
     int a, b, n;
+    if(a>b)swap(a,b);
     cout << "Введите диапазоны: " << endl;
     cin >> a >> b;
     cout << "Введите число: " << endl;
@@ -81,37 +82,34 @@ int main()
     }
     //ZADANIE *
     cout << endl<< "Введите сторону квадрата: ";
-    int y7,shape81=0,shape82=0;
-    cin >> y7;
-    cout << endl;
+    int mum, shape = 0;
+cin >> mum;
+if (mum % 2 == 0) mum++;
+shape = round(mum / 2);
 
-    if (y7 % 2 == 0) y7++;
-    shape81 = round(y7 / 2);
-    shape82 = round(y7 / 2);
-
-    for (int i = 0; i < y7; i++) {
-        cout << " " << endl;
-        for (int j = 0; j < y7; j++) {
-            if (i == 0) {
-                cout << " * ";
-            }
-            else if (i == y7-1) {
-                cout << " * ";
-            }
-            else if (j == 0 || j == y7-1) {
-                cout << " * ";
-            }
-            else if (i == shape82) {
-                cout << " * ";
-            }
-            else if (j == shape81) {
-                cout << " * ";
-            }
-            else {
-                cout << " ";
-            }
+for (int i = 0; i < mum; i++) {
+    cout << " " << endl;
+    for (int j = 0; j < mum; j++) {
+        if (i == 0) {
+            cout << "*";
+        }
+        else if (i == mum - 1) {
+            cout << "*";
+        }
+        else if (j == 0 || j == mum - 1) {
+            cout << "*";
+        }
+        else if (i == shape) {
+            cout << "*";
+        }
+        else if (j == shape) {
+            cout << "*";
+        }
+        else {
+            cout << " ";
         }
     }
+}
     
     //ZADANIE (
     cout << endl<<"Программа по нахождению четных чисел:";
