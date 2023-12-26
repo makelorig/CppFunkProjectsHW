@@ -140,7 +140,7 @@ for (int i = 0; i < mum; i++) {
             max10 = array[i][j];
             stolb=j+ 1;
         }
-        summ10 += summ10;
+        summ10 += array[i][j];
         }
     }
     cout << "Наим = " << min10 << " Наиб = " << max10 << " Сумма = " << summ10 << " Столбец с наиб  = " << stolb;
